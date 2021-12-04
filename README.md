@@ -1,7 +1,7 @@
 # Pig-Dice-Game
 Build a Pig Dice Game with Html - Css - JavaScript. This Project suitable for beginners.
 
-In This Project, I Used addEventListeners, Function, querySelector and getElementById
+In This Project, I Used addEventListeners, Function, querySelector, getElementById and You learn how to add or remove a class of Html Element.
 
 /////////////////////////////////////////////////
 
