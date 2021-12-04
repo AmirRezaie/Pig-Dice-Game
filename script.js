@@ -40,7 +40,7 @@ roll.addEventListener("click", function () {
     //Remove Hidden Class
     document.querySelector(".dice").classList.remove("hidden");
 
-    //Display Dice With Image Function
+    //Display Dice With Image
     document.querySelector(".dice").src = `images/dice-${dice}.png`;
 
     //Adding Dice To Current Value And If Dice = 1, Switch Player
