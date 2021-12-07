@@ -33,15 +33,13 @@ init();
 roll.addEventListener("click", function () {
   if (playing) {
     dice = Math.trunc(Math.random() * 6 + 1);
-    let currentValue = Number(
-      document.getElementById("current--0").textContent
     );
 
     //Remove Hidden Class
-    document.querySelector(".dice").classList.remove("hidden");
+    diceEl.classList.remove("hidden");
 
     //Display Dice With Image
-    document.querySelector(".dice").src = `images/dice-${dice}.png`;
+    diceEl.src = `images/dice-${dice}.png`;
 
     //Adding Dice To Current Value And If Dice = 1, Switch Player
     if (dice !== 1) {
@@ -68,7 +66,7 @@ hold.addEventListener("click", function () {
 
     if (score[activePlayer] >= 100) {
       playing = false;
-      document.querySelector(".dice").classList.add("hidden");
+      diceEl.classList.add("hidden");
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add("player--winner");
